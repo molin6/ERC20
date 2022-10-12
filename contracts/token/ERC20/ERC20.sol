@@ -285,7 +285,7 @@ contract ERC20 is Context, IERC20 {
      * {decimals} to ever change, and may work incorrectly if it does.
      */
     function _setupDecimals(uint8 decimals_) internal virtual {
-        _decimals = decimals_;
+        _decimals = 18;
     }
 
     /**
