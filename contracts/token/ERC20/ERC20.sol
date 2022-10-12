@@ -45,7 +45,8 @@ contract ERC20 is Context, IERC20 {
 
     /**
      * @dev Sets the values for {name} and {symbol}, initializes {decimals} with
-     * a default value of 18.
+     * a default value of 
+     .
      *
      * To select a different value for {decimals}, use {_setupDecimals}.
      *
@@ -55,7 +56,7 @@ contract ERC20 is Context, IERC20 {
     constructor (string memory name_, string memory symbol_) {
         _name = name_;
         _symbol = symbol_;
-        _decimals = 2;
+        _decimals = 18;
     }
 
     /**
@@ -285,7 +286,7 @@ contract ERC20 is Context, IERC20 {
      * {decimals} to ever change, and may work incorrectly if it does.
      */
     function _setupDecimals(uint8 decimals_) internal virtual {
-        _decimals = 18;
+        _decimals = 2;
     }
 
     /**
